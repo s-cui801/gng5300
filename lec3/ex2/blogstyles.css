@@ -1,0 +1,66 @@
+/* Define color palette */
+:root {
+    --primary-color: #1e1e1e; /* Dark background */
+    --secondary-color: #ff4081; /* Vibrant pink */
+    --background-color-start: #121212; /* Dark background start */
+    --background-color-end: #1e1e1e; /* Dark background end */
+    --text-color: #e0e0e0; /* Light text */
+    --link-color: #ff4081; /* Vibrant pink links */
+    --link-hover-color: #ff79b0; /* Lighter pink links on hover */
+}
+
+/* General styles */
+body {
+    background: linear-gradient(to bottom, var(--background-color-start), var(--background-color-end));
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--text-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--link-hover-color) !important;
+}
+
+/* Header styles */
+h1 {
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Article styles */
+.article {
+    background-color: var(--primary-color);
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.article h2 a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.article h2 a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--link-hover-color);
+    border-color: var(--link-hover-color);
+}

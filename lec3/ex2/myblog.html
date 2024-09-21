@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to My Blog!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="blogstyles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#register">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row"></div>
+            <div class="col-md-12">
+                <h1 class="text-center my-4">Welcome to My Blog!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="article">
+                    <h2><a href="#" class="text-decoration-none">Article 1</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</p>
+                    <p><a href="#" class="text-decoration-none">Read more...</a></p>
+                </div>
+                <div class="article">
+                    <h2><a href="#" class="text-decoration-none">Article 2</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</p>
+                    <p><a href="#" class="text-decoration-none">Read more...</a></p>
+                </div>
+                <div class="article">
+                    <h2><a href="#" class="text-decoration-none">Article 3</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</p>
+                    <p><a href="#" class="text-decoration-none">Read more...</a></p>
+                </div>
+                <div class="spacer"></div>
+            </div>
+            <div class="col-md-4">
+                <div id="login" class="mb-4">
+                    <h2>Login</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div id="register">
+                    <h2>Register</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="new-email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="new-email" placeholder="Enter email" name="new-email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="new-pwd" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="new-pwd" placeholder="Enter password" name="new-pswd">
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirm-pwd" class="form-label">Confirm Password:</label>
+                            <input type="password" class="form-control" id="confirm-pwd" placeholder="Confirm password" name="confirm-pswd">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-light text-center">
+        <p>&copy; 2024 My Blog</p>
+    </footer>
+</body>
+</html>
