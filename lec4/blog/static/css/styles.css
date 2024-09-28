@@ -1,0 +1,151 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffccf9, #b3e5fc);
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    text-align: center; /* Center the header content */
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    display: inline-block; /* Change float to inline-block for centering */
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+/* Article */
+article {
+    margin-bottom: 40px; /* Add space between articles */
+    padding: 20px;
+    border: 1px solid #ddd; /* Add border to distinguish articles */
+    border-radius: 5px;
+    background: #fff;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Showcase */
+#showcase {
+    min-height: 400px;
+    background: url('../img/showcase.jpg') no-repeat 0 -400px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    background: #ffffff;
+    margin-top: 20px;
+}
+
+/* Sidebar */
+aside {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+    padding: 20px;
+    background: #e8491d;
+    color: #ffffff;
+}
+
+aside h3 {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Utility classes */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+button, .button {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+button:hover, .button:hover,
+button:focus, .button:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0;
+}
